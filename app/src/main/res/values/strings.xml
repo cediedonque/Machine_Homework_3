@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Burgeran ni BRYAN</string>
+    <string name="type_of_burger">Type of Burger:</string>
+    <string name="chicken">Chicken</string>
+    <string name="beef">Beef</string>
+    <string name="add_ons">Add-ons:</string>
+    <string name="pickles">Pickles</string>
+    <string name="cheese">Cheese</string>
+    <string name="mustard">Mustard</string>
+    <string name="bacon">Bacon</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="please_enter_your_name">Please Enter your Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="todo">TODO</string>
+</resources>

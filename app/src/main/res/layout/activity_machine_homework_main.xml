@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MachineHomeworkMain">
+
+
+    <TextView
+        android:id="@+id/txtTypeBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/type_of_burger" />
+
+    <RadioGroup
+        android:id="@+id/Types"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTypeBurger">
+
+        <RadioButton
+            android:id="@+id/RBchicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chicken"/>
+
+        <RadioButton
+            android:id="@+id/RBbeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beef"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtAddon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Types"
+        android:text="@string/add_ons"
+        android:layout_margin="5dp"/>
+
+    <CheckBox
+        android:id="@+id/Check_pickles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckedBox"
+        android:layout_below="@+id/txtAddon"
+        android:text="@string/pickles"/>
+
+    <CheckBox
+        android:id="@+id/Check_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckedBox"
+        android:layout_below="@+id/Check_pickles"
+        android:text="@string/cheese"/>
+
+    <CheckBox
+        android:id="@+id/Check_mustard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckedBox"
+        android:layout_below="@+id/Check_cheese"
+        android:text="@string/mustard"/>
+
+    <CheckBox
+        android:id="@+id/Check_bacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckedBox"
+        android:layout_below="@+id/Check_mustard"
+        android:text="@string/bacon"/>
+
+    <CheckBox
+        android:id="@+id/Check_pineapple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckedBox"
+        android:layout_below="@+id/Check_bacon"
+        android:text="@string/pineapple"/>
+
+    <CheckBox
+        android:id="@+id/Check_lettuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckedBox"
+        android:layout_below="@+id/Check_pineapple"
+        android:text="@string/lettuce"/>
+
+    <EditText
+        android:id="@+id/Edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/Check_lettuce"
+        android:hint="@string/please_enter_your_name"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/Edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/Edit_name"
+        android:hint="@string/phone_number"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/Edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/Edit_phone"
+        android:hint="@string/address"
+        android:inputType="" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo" />
+
+</RelativeLayout>
